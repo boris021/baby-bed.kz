@@ -3,6 +3,14 @@
 400;500;600&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
 @charset "UTF-8";
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 [class*=_icon-]:before {
   font-family: "icons";
   font-style: normal;
@@ -753,7 +761,7 @@ h6 {
 }
 
 .fuction__item-img {
-  min-width: 91px;
+  max-width: 91px;
   height: 74px;
   margin-right: 15px;
 }
@@ -906,12 +914,19 @@ h6 {
 }
 
 .card-item__money-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-right: 20px;
-  padding: 12px 40px;
+  padding: 12px 30px;
   font-size: 14px;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.card-item__money-btn::before {
+  margin-right: 3px;
 }
 
 @supports (padding-top: clamp( 2.5rem , 1.8181818182rem  +  3.4090909091vw , 4.375rem )) {
@@ -1027,8 +1042,14 @@ h6 {
 }
 
 .insta__left-btn {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin-top: 0px;
+}
+
+.insta__left-btn::before {
+  margin-right: 5px;
 }
 
 .insta__right__image {
@@ -1188,7 +1209,7 @@ h6 {
   -webkit-box-shadow: 0px 4px 15px rgba(43, 57, 130, 0.25);
           box-shadow: 0px 4px 15px rgba(43, 57, 130, 0.25);
   border-radius: 30px;
-  padding: 10px 22px;
+  padding: 10px 20px;
   font-family: "Exo 2";
   font-weight: 600;
   font-size: 16px;
@@ -1204,6 +1225,11 @@ h6 {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.faq__form-left-actions-link::before {
+  margin-right: 5px;
+  font-size: 12px;
 }
 
 .faq__form-left-actions-link:hover {
@@ -1360,6 +1386,14 @@ h6 {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.map__body-btn::before {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 5px;
+  font-size: 13px;
 }
 
 .map__body-btn:hover {
