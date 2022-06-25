@@ -1,0 +1,252 @@
+//====================================================================================================
+.header {
+	z-index: 3;
+
+	&__container {}
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		width: 97px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+	}
+
+	&__actions-phone {
+		display: flex;
+		align-items: center;
+		background: #FFFFFF;
+		border-radius: 30px;
+		padding: 4px 15px 4px 4px;
+		@include adaptiveValue("margin-right", 15, 5);
+
+		@media (max-width: em(374)) {
+			display: none;
+		}
+
+		img {
+			margin-right: 10px;
+			transition: all 0.3s ease 0s;
+
+			&:hover {
+				transform: rotate(360deg);
+			}
+
+		}
+
+		a {
+			font-family: 'Lobster';
+			font-weight: 400;
+			font-size: 18px;
+			letter-spacing: 0.04em;
+			transition: all 0.3s ease 0s;
+
+			@media (max-width:$tablet) {
+				font-size: 16px;
+			}
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	&__action-tel {}
+
+	&__action-link {
+		@include adaptiveValue("margin-right", 15, 5);
+	}
+
+	&__action-link-insta {
+		transition: all 0.3s ease 0s;
+
+		@media (max-width:$tablet) {
+			display: none;
+		}
+
+		@media (max-width:$mobile) {
+			display: inline-block;
+			margin-right: 20px;
+			margin-top: 20px;
+
+			img {
+				width: 40px;
+			}
+		}
+
+		&:hover {
+			transform: rotate(360deg);
+		}
+	}
+
+	&__action-link-whatsapp {
+		transition: all 0.3s ease 0s;
+
+		@media (max-width:$tablet) {
+			display: none;
+		}
+
+		@media (max-width:$mobile) {
+			display: inline-block;
+			margin-top: 20px;
+
+			img {
+				width: 40px;
+			}
+		}
+
+		&:hover {
+			transform: rotate(360deg);
+		}
+	}
+}
+
+.menu {
+
+	&__body {
+		@media (max-width:$mobile) {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			top: 90px;
+			left: -100%;
+			overflow: auto;
+			background: rgba(245, 245, 245, 0.9);
+			padding: 40px 20px;
+			z-index: 4;
+			transition: all 0.3s ease 0s;
+
+			.menu-open & {
+				left: 0;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				position: fixed;
+				height: 70px;
+				width: 100%;
+				top: 0px;
+				left: 0;
+				z-index: 50;
+			}
+		}
+	}
+
+	&__icon {}
+
+	&__list {
+		display: flex;
+
+		@media (max-width:$mobile) {
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+		@include adaptiveValue("margin-right", 30, 15);
+		font-family: 'Exo';
+		font-weight: 400;
+		line-height: math.div(19, 14);
+
+
+		@media (max-width:$mobile) {
+			margin-bottom: 10px;
+			font-size: 26px;
+			display: block;
+			margin-right: 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+			color: #000;
+		}
+	}
+}
+
+//====================================================================================================
+
+//Burger
+
+.icon-menu {
+	display: none;
+
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
+
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: $mainColor;
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		span {
+			top: calc(50% - rem(1));
+		}
+
+		.menu__body {
+			display: block;
+			background-color: #000;
+		}
+
+		.menu-open & {
+			span {
+				width: 0;
+			}
+
+			&::before,
+			&::after {}
+
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
+
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
