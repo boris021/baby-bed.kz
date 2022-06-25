@@ -1,3 +1,18 @@
 //====================================================================================================
+.footer {
+	height: rem(50);
+	background: #4F4F53;
+	display: flex;
+	align-items: center;
+
+	&__container {
+		font-family: 'Exo 2';
+		font-weight: 500;
+		font-size: 14px;
+		line-height: math.div(17, 14);
+		text-align: center;
+		color: #FFFFFF;
+	}
+}
 
 //====================================================================================================
