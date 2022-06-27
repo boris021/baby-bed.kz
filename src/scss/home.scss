@@ -35,7 +35,7 @@
 		font-weight: 400;
 		@include adaptiveValue("font-size", 45, 30);
 		line-height: math.div(56, 45);
-		max-width: rem(500);
+		max-width: rem(650);
 
 		@media (max-width:$tablet) {
 			width: 100%;
@@ -190,6 +190,7 @@
 	&__card-item {
 		background: rgba(245, 245, 245, 0.58);
 		border-radius: 0px 0px 10px 10px;
+		height: 100%;
 	}
 }
 
@@ -198,10 +199,13 @@
 	&__img {
 		border-radius: 10px 10px 0px 0px;
 		min-width: 310px;
+		height: 310px;
+
 		margin-bottom: 20px;
 
 		img {
 			width: 100%;
+			height: 100%;
 			border-radius: 10px 10px 0px 0px;
 		}
 	}
@@ -215,7 +219,10 @@
 		text-align: center;
 		letter-spacing: 0.045em;
 		margin-bottom: 14px;
+		height: rem(44)
 	}
+
+
 
 	&__text {
 		margin-bottom: 20px;
@@ -233,6 +240,7 @@
 			}
 		}
 	}
+
 
 	&__money {
 		display: flex;
