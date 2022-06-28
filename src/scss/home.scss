@@ -31,7 +31,6 @@
 	&__title {
 		position: relative;
 		z-index: 2;
-		font-family: 'Lobster';
 		font-weight: 400;
 		@include adaptiveValue("font-size", 45, 30);
 		line-height: math.div(56, 45);
@@ -250,7 +249,6 @@
 	}
 
 	&__money-prise {
-		font-family: 'Lobster';
 		font-weight: 400;
 		font-size: 18px;
 		color: $blueColor;
@@ -292,7 +290,6 @@
 	}
 
 	&__left-title {
-		font-family: 'Lobster';
 		font-weight: 400;
 		@include adaptiveValue("font-size", 30, 22);
 		line-height: math.div(38, 30);
@@ -309,7 +306,6 @@
 	}
 
 	&__left-block-title {
-		font-family: 'Lobster';
 		font-weight: 400;
 		@include adaptiveValue("font-size", 18, 16);
 		margin-bottom: 15px;
@@ -434,7 +430,6 @@
 	}
 
 	&__form-left-title {
-		font-family: 'Lobster';
 		font-weight: 400;
 		@include adaptiveValue("font-size", 26, 22);
 		line-height: math.div(32, 26);
@@ -558,7 +553,6 @@
 	}
 
 	&__body-title {
-		font-family: 'Lobster';
 		font-weight: 400;
 		@include adaptiveValue("font-size", 20, 18);
 		line-height: math.div(25, 20);

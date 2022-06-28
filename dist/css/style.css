@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Exo+2:wght@300;
 
 400;500;600&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
 @charset "UTF-8";
 @font-face {
   font-family: icons;
@@ -148,7 +147,7 @@ body {
 body {
   color: #4F4F53;
   line-height: 1;
-  font-family: "Exo+2";
+  font-family: "Exo 2";
   font-size: 0.875rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -160,7 +159,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Exo+2";
+  font-family: "Exo 2";
   font-size: inherit;
 }
 
@@ -608,7 +607,6 @@ h6 {
 .main__title {
   position: relative;
   z-index: 2;
-  font-family: "Lobster";
   font-weight: 400;
   line-height: 1.2444444444;
   max-width: 40.625rem;
@@ -912,7 +910,6 @@ h6 {
 }
 
 .card-item__money-prise {
-  font-family: "Lobster";
   font-weight: 400;
   font-size: 18px;
   color: #039BE5;
@@ -981,7 +978,6 @@ h6 {
 }
 
 .insta__left-title {
-  font-family: "Lobster";
   font-weight: 400;
   line-height: 1.2666666667;
   letter-spacing: 0.045em;
@@ -1009,7 +1005,6 @@ h6 {
 }
 
 .insta__left-block-title {
-  font-family: "Lobster";
   font-weight: 400;
   margin-bottom: 15px;
 }
@@ -1172,7 +1167,6 @@ h6 {
 }
 
 .faq__form-left-title {
-  font-family: "Lobster";
   font-weight: 400;
   line-height: 1.2307692308;
   letter-spacing: 0.045em;
@@ -1321,7 +1315,6 @@ h6 {
 }
 
 .map__body-title {
-  font-family: "Lobster";
   font-weight: 400;
   line-height: 1.25;
   text-align: center;
